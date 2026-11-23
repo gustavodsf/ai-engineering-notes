@@ -1,3 +1,0 @@
-# observability
-
-Notes coming soon.
