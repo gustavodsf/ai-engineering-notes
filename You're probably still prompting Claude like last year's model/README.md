@@ -1,5 +1,7 @@
 # You're probably still prompting Claude like last year's model
 
+![Post image](image.png)
+
 You're probably still prompting Claude like last year's model
 
 Addy Osmani's latest piece makes a simple case: newer models need less prompting than most of us still give them. For Opus 5.5, one prompt with a clear goal and a way to verify the result is often enough. Then let the model work.
