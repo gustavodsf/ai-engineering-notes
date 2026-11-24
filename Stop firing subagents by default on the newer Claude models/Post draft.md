@@ -21,7 +21,7 @@ I use Claude and Codex every day, and I build agents with tool use in production
 
 What have you been sending to a subagent that the main session could finish on its own?
 
-Notes and references:
+More detail in:
 https://github.com/gustavodsf/ai-engineering-notes
 https://github.com/gustavodsf/ai-engineering-notes/tree/main/Stop%20firing%20subagents%20by%20default%20on%20the%20newer%20Claude%20models
 
