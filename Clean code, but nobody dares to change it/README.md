@@ -4,22 +4,23 @@
 
 Clean code, but nobody dares to change it
 
-ElemarJR tells a story many of us have seen. A module applies interest and rounds it down in one specific case. The code is new and the tests pass, but nobody remembers if the rule comes from a law, a regulation or a deal with a client. So nobody touches it. That is not technical debt, and calling it that sends the team to fix the wrong thing.
+You can have clean code and passing tests, and still nobody wants to change a business rule. In a recent video, ElemarJR argues that this is often not technical debt, and that the wrong name sends the team to fix the wrong thing.
 
-Margaret-Anne Storey's triple debt model gives each problem its own name:
+Imagine a billing service that skips invoices for paused accounts. Product asks: should we start invoicing them? Nobody can say how much revenue that holds back, or why the rule exists: a finance policy, a sales courtesy, or an old bug fix.
 
-1. Technical debt lives in the code.
-The code lags behind what the team has learned. Ask: does it reflect what we understand today?
+Margaret-Anne Storey's triple debt model gives each problem a name.
 
-2. Cognitive debt lives in people.
-The team can't explain what the system does or predict what a change will break. Ask: can someone other than the author explain it?
+1. Technical debt lives in the code. The same skip might exist in checkout, invoices and refunds. Does the code still reflect what we understand today?
 
-3. Intent debt lives in artifacts.
-Goals, constraints and reasons were never written down. Ask: do we know why we decided this, and when to revisit it?
+2. Cognitive debt lives in people. Everyone can read the line, but nobody can predict the effect of turning it off. Can someone other than the author explain it, and forecast what a change would break?
 
-AI makes this sharper. Storey notes it can reduce technical debt while speeding up the other two. A refactor by an agent can clean the code and leave nobody understanding it, or knowing why. ElemarJR's advice: when all three show up, pay the why first, then the understanding, and the code last, where AI helps most.
+3. Intent debt lives in artifacts. This is the missing "why": we don't know if the rule still needs to exist. The fix is a short decision record, written when you decide, or a new one if the original reason is gone.
 
-I use Claude and Codex every day and work with agents that open and review PRs. The code arrives ready, but the understanding only comes if someone goes after it. In ledger and money code, the reason behind a rule matters as much as the rule, so a change to a rule should carry its why.
+AI makes this sharper. An agent can merge those three implementations in minutes, and the debt looks paid. Storey notes that AI can reduce technical debt while speeding up the other two. That payment is counterfeit if nobody verified the behaviour, the understanding or the why.
+
+ElemarJR's advice, when all three show up: pay the why first, then the understanding, and the code last, where AI helps most.
+
+I use Claude and Codex every day, and I work with agents that open and review PRs. At Inoa and Dock I worked on ledger and money systems, where a rule without its reason is hard to change safely.
 
 Which one hurts your team most right now: the code, the understanding, or the missing why?
 
